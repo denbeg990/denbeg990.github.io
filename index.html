@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+    <title>Antarktis djur</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="parallax.js"></script>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="slutuppgift.js"></script>
+    <script src="meny.js"></script>
+    <script>
+    if (screen && screen.width > 600) 
+    {
+        document.write('<script type="text/javascript" src="links.js"><\/script>');
+    }
+</script>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#Antarktis" onmouseover="linkHover('antarktisnav')" onmouseout="linkOff('antarktisnav')">Antarktis</a></li>
+
+        <li><a href="#Pingvin" onmouseover="linkHover('pingvinnav')" onmouseleave="linkOff('pingvinnav')">Pingviner</a></li>
+
+        <li><a href="#Sal" onmouseover="linkHover('salnav')" onmouseleave="linkOff('salnav')">Sälar</a>
+        </li>
+
+        <li><a href="#Val" onmouseover="linkHover('valnav')" onmouseleave="linkOff('valnav')">Valar</a>
+        </li>
+
+        <li><a href="#Delfin" onmouseover="linkHover('delfinnav')" onmouseleave="linkOff('delfinnav')">Delfiner</a>
+        </li>
+
+        <li><a href="#Albatross" onmouseover="linkHover('albatrossnav')" onmouseleave="linkOff('albatrossnav')">Albatrosser</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div id="navcontent">
+      <div id="antarktisnav" class="navdrop" onmouseover="linkHover('antarktisnav')" onmouseout="linkOff('antarktisnav')">
+        <ul>
+          <li><a href="#Historia">Historia</a></li>
+        </ul>
+      </div>
+      <div id="pingvinnav" class="navdrop" onmouseover="linkHover('pingvinnav')" onmouseleave="linkOff('pingvinnav')">
+        <ul>
+          <li><a href="#Kungspingvin">Kungspingvin</a></li>
+          <li><a href="#Kejsarpingvin">Kejsarpingvin</a></li>
+          <li><a href="#Adeliepingvin">Adéliepingvin</a></li>
+        </ul>
+      </div>
+      <div id="salnav" class="navdrop" onmouseover="linkHover('salnav')" onmouseleave="linkOff('salnav')">
+        <ul>
+          <li><a href="#Krabbatarsal">Krabbätarsäl</a></li>
+          <li><a href="#Palssal">Antarktisk pälssal</a></li>
+          <li><a href="#Elefant">Sydlig sjöelefant</a></li>
+        </ul>
+      </div>
+      <div id="valnav" class="navdrop" onmouseover="linkHover('valnav')" onmouseleave="linkOff('valnav')">
+        <ul>
+          <li><a href="#Kaskelot">Kaskelot</a></li>
+          <li><a href="#Knolval">Knölval</a></li>
+          <li><a href="#Blaval">Blåval</a></li>
+        </ul>
+      </div>
+      <div id="delfinnav" class="navdrop" onmouseover="linkHover('delfinnav')" onmouseleave="linkOff('delfinnav')">
+        <ul>
+          <li><a href="#Grindval">Långfenad grindval</a></li>
+          <li><a href="#Timglasdelfin">Timglasdelfin</a></li>
+          <li><a href="#Spackhuggare">Späckhuggare</a></li>
+        </ul>
+      </div>
+      <div id="albatrossnav" class="navdrop" onmouseover="linkHover('albatrossnav')" onmouseleave="linkOff('albatrossnav')">
+        <ul>
+          <li><a href="#Vandringsalbatross">Vandringsalbatross</a></li>
+          <li><a href="#Sotalalbatross">Sotalalbatross</a></li>
+        </ul>
+      </div>
+    </div>
+    <button onclick="hamMeny(this); openMeny();">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </button>
+    
+    <div id="Antarktis">
+      <figure id="ett" class="parallax-window skroll" data-parallax="scroll" data-image-src="Antarktis1.jpg" data-speed="0.05" iosFix="true" androidFix="true">
+          <div class="text">
+              <h1>Antarktis</h1>
+              <p>Antarktis är planeten Jordens sydligaste kontinent. På kontinenten som är omringad av Antarktiska oceanen finns Jordens geografiska sydpol. Det är den femte största kontinenten och har en yta som är dubbelt så stor som Australien. Ungefär 98% av Antarktis är täckt med is som i genomsnitt är 1.9 km tjockt. Det är den kallaste, torraste och mest blåsiga kontinenten.
+              </p>
+        </div>
+      </figure>
+      <figure id="Historia" class="parallax-window skroll" data-parallax="scroll" data-image-src="Antarktis2.jpg" data-speed="0.05" iosFix="true" androidFix="true">
+          <div class="text">
+              <h1>Antarktis Historia</h1>
+              <p>Antarktis har ingen infödd befolkning och upptäcktes av människor väldigt sent. Den upptäcktes först 1820 då en rysk expidition ledd av Fabian Gottlieb von Bellingshausen och Mikhail Lazarev blev de första människorna att se kontinenten. Amerikanen John Davis blev ett år senare den första att sätta sin fot på isen. Flera länder såsom Norge, Ryssland, Chile och Storbrittanien har hävdat suveränitet över vissa områden.
+              </p>
+        </div>
+      </figure>
+    </div> <!--Här slutar Antarktis-->
+
+    <div id="Pingvin">
+      <figure class="parallax-window skroll" data-parallax="scroll" data-image-src="Pingviner1.jpg" data-speed="0.05" iosFix="true" androidFix="true">
+          <div class="text">
+              <h1>Pingviner</h1>
+              <p>Lorem ipsum pro tation euripidis liberavisse eu, duis brute probatus quo eu.
+                  Quot ubique iisque no eum, per soluta tibique contentiones ad.
+                  Has hinc repudiandae ea. Ea putent contentiones mel.
+                  Mea delenit mentitum at, at pri vocent accusata, nam te clita scripta accumsan.
+                  Lorem facete mel id. Nonummy quaestio usu ne, cu atqui eirmod scripta pri.
+                  Tamquam quaeque an cum.
+              </p>
+        </div>
+      </figure>
+      <figure id="Kungspingvin" class="parallax-window skroll" data-parallax="scroll" data-image-src="Pingviner2.jpg" data-speed="0.05" iosFix="true" androidFix="true">
+          <div class="text">
+              <h1>Kungspingvin</h1>
+              <p>Lorem ipsum pro tation euripidis liberavisse eu, duis brute probatus quo eu.
+                  Quot ubique iisque no eum, per soluta tibique contentiones ad.
+                  Has hinc repudiandae ea. Ea putent contentiones mel.
+                  Mea delenit mentitum at, at pri vocent accusata, nam te clita scripta accumsan.
+                  Lorem facete mel id. sNonummy quaestio usu ne, cu atqui eirmod scripta pri.
+                  Tamquam quaeque an cum.
+              </p>
+        </div>
+      </figure>
+      <figure id="Kejsarpingvin" class="parallax-window skroll" data-parallax="scroll" data-image-src="Pingviner3.jpg" data-speed="0.05" iosFix="true" androidFix="true">
+          <div class="text">
+              <h1>Kejsarpingvin</h1>
+              <p>Lorem ipsum pro tation euripidis liberavisse eu, duis brute probatus quo eu.
+                  Quot ubique iisque no eum, per soluta tibique contentiones ad.
+                  Has hinc repudiandae ea. Ea putent contentiones mel.
+                  Mea delenit mentitum at, at pri vocent accusata, nam te clita scripta accumsan.
+                  Lorem facete mel id. Nonummy quaestio usu ne, cu atqui eirmod scripta pri.
+                  Tamquam quaeque an cum.
+              </p>
+        </div>
+      </figure>
+      <figure id="Adeliepingvin" class="parallax-window skroll" data-parallax="scroll" data-image-src="Pingviner4.jpg" data-speed="0.05" iosFix="true" androidFix="true">
+          <div class="text">
+              <h1>Adéliepingvin</h1>
+              <p>Lorem ipsum pro tation euripidis liberavisse eu, duis brute probatus quo eu.
+                  Quot ubique iisque no eum, per soluta tibique contentiones ad.
+                  Has hinc repudiandae ea. Ea putent contentiones mel.
+                  Mea delenit mentitum at, at pri vocent accusata, nam te clita scripta accumsan.
+                  Lorem facete mel id. Nonummy quaestio usu ne, cu atqui eirmod scripta pri.
+                  Tamquam quaeque an cum.
+              </p>
+        </div>
+      </figure>
+    </div> <!--Här slutar Pingviner-->
+
+    <div id="Sal">
+      <figure class="parallax-window skroll" data-parallax="scroll" data-image-src="sal1.jpg" data-speed="0.05" iosFix="true" androidFix="true">
+          <div class="text">
+              <h1>Sälar</h1>
+              <p>Lorem ipsum pro tation euripidis liberavisse eu, duis brute probatus quo eu.
+                  Quot ubique iisque no eum, per soluta tibique contentiones ad.
+                  Has hinc repudiandae ea. Ea putent contentiones mel.
+                  Mea delenit mentitum at, at pri vocent accusata, nam te clita scripta accumsan.
+                  Lorem facete mel id. sNonummy quaestio usu ne, cu atqui eirmod scripta pri.
+                  Tamquam quaeque an cum.
+              </p>
+        </div>
+      </figure>
+      <figure id="Krabbatarsal" class="parallax-window skroll" data-parallax="scroll" data-image-src="sal2.jpg" data-speed="0.05" iosFix="true" androidFix="true">
+          <div class="text">
+              <h1>Krabbätarsäl</h1>
+              <p>Lorem ipsum pro tation euripidis liberavisse eu, duis brute probatus quo eu.
+                  Quot ubique iisque no eum, per soluta tibique contentiones ad.
+                  Has hinc repudiandae ea. Ea putent contentiones mel.
+                  Mea delenit mentitum at, at pri vocent accusata, nam te clita scripta accumsan.
+                  Lorem facete mel id. Nonummy quaestio usu ne, cu atqui eirmod scripta pri.
+                  Tamquam quaeque an cum.
+              </p>
+        </div>
+      </figure>
+      <figure id="Palssal" class="parallax-window skroll" data-parallax="scroll" data-image-src="sal3.jpg" data-speed="0.05" iosFix="true" androidFix="true">
+          <div class="text">
+              <h1>Antarktisk pälssäl</h1>
+              <p>Lorem ipsum pro tation euripidis liberavisse eu, duis brute probatus quo eu.
+                  Quot ubique iisque no eum, per soluta tibique contentiones ad.
+                  Has hinc repudiandae ea. Ea putent contentiones mel.
+                  Mea delenit mentitum at, at pri vocent accusata, nam te clita scripta accumsan.
+                  Lorem facete mel id. Nonummy quaestio usu ne, cu atqui eirmod scripta pri.
+                  Tamquam quaeque an cum.
+              </p>
+        </div>
+      </figure>
+      <figure id="Elefant" class="parallax-window skroll" data-parallax="scroll" data-image-src="sal4.jpg" data-speed="0.05" iosFix="true" androidFix="true">
+          <div class="text">
+              <h1>Sydlig sjöelefant</h1>
+              <p>Lorem ipsum pro tation euripidis liberavisse eu, duis brute probatus quo eu.
+                  Quot ubique iisque no eum, per soluta tibique contentiones ad.
+                  Has hinc repudiandae ea. Ea putent contentiones mel.
+                  Mea delenit mentitum at, at pri vocent accusata, nam te clita scripta accumsan.
+                  Lorem facete mel id. Nonummy quaestio usu ne, cu atqui eirmod scripta pri.
+                  Tamquam quaeque an cum.
+              </p>
+        </div>
+      </figure>
+    </div> <!--Här slutar Säl-->
+
+    <div id="Val">
+      <figure class="parallax-window skroll" data-parallax="scroll" data-image-src="val1.jpg" data-speed="0.05" iosFix="true" androidFix="true">
+          <div class="text">
+              <h1>Valar</h1>
+              <p>Lorem ipsum pro tation euripidis liberavisse eu, duis brute probatus quo eu.
+                  Quot ubique iisque no eum, per soluta tibique contentiones ad.
+                  Has hinc repudiandae ea. Ea putent contentiones mel.
+                  Mea delenit mentitum at, at pri vocent accusata, nam te clita scripta accumsan.
+                  Lorem facete mel id. sNonummy quaestio usu ne, cu atqui eirmod scripta pri.
+                  Tamquam quaeque an cum.
+              </p>
+        </div>
+      </figure>
+      <figure id="Kaskelot" class="parallax-window skroll" data-parallax="scroll" data-image-src="val2.jpg" data-speed="0.05" iosFix="true" androidFix="true">
+          <div class="text">
+              <h1>Kaskelot</h1>
+              <p>Lorem ipsum pro tation euripidis liberavisse eu, duis brute probatus quo eu.
+                  Quot ubique iisque no eum, per soluta tibique contentiones ad.
+                  Has hinc repudiandae ea. Ea putent contentiones mel.
+                  Mea delenit mentitum at, at pri vocent accusata, nam te clita scripta accumsan.
+                  Lorem facete mel id. Nonummy quaestio usu ne, cu atqui eirmod scripta pri.
+                  Tamquam quaeque an cum.
+              </p>
+        </div>
+      </figure>
+      <figure id="Knolval" class="parallax-window skroll" data-parallax="scroll" data-image-src="val3.jpg" data-speed="0.05" iosFix="true" androidFix="true">
+          <div class="text">
+              <h1>Knölval</h1>
+              <p>Lorem ipsum pro tation euripidis liberavisse eu, duis brute probatus quo eu.
+                  Quot ubique iisque no eum, per soluta tibique contentiones ad.
+                  Has hinc repudiandae ea. Ea putent contentiones mel.
+                  Mea delenit mentitum at, at pri vocent accusata, nam te clita scripta accumsan.
+                  Lorem facete mel id. Nonummy quaestio usu ne, cu atqui eirmod scripta pri.
+                  Tamquam quaeque an cum.
+              </p>
+        </div>
+      </figure>
+      <figure id="Blaval" class="parallax-window skroll" data-parallax="scroll" data-image-src="val4.jpg" data-speed="0.05" iosFix="true" androidFix="true">
+          <div class="text">
+              <h1>Blåval</h1>
+              <p>Lorem ipsum pro tation euripidis liberavisse eu, duis brute probatus quo eu.
+                  Quot ubique iisque no eum, per soluta tibique contentiones ad.
+                  Has hinc repudiandae ea. Ea putent contentiones mel.
+                  Mea delenit mentitum at, at pri vocent accusata, nam te clita scripta accumsan.
+                  Lorem facete mel id. Nonummy quaestio usu ne, cu atqui eirmod scripta pri.
+                  Tamquam quaeque an cum.
+              </p>
+        </div>
+      </figure>
+    </div> <!--Här slutar val-->
+
+    <div id="Delfin">
+      <figure class="parallax-window skroll" data-parallax="scroll" data-image-src="delfin1.jpg" data-speed="0.05" iosFix="true" androidFix="true">
+          <div class="text">
+              <h1>delfin</h1>
+              <p>Lorem ipsum pro tation euripidis liberavisse eu, duis brute probatus quo eu.
+                  Quot ubique iisque no eum, per soluta tibique contentiones ad.
+                  Has hinc repudiandae ea. Ea putent contentiones mel.
+                  Mea delenit mentitum at, at pri vocent accusata, nam te clita scripta accumsan.
+                  Lorem facete mel id. sNonummy quaestio usu ne, cu atqui eirmod scripta pri.
+                  Tamquam quaeque an cum.
+              </p>
+        </div>
+      </figure>
+      <figure id="Grindval" class="parallax-window skroll" data-parallax="scroll" data-image-src="delfin2.jpg" data-speed="0.05" iosFix="true" androidFix="true">
+          <div class="text">
+              <h1>Långfenad grindval</h1>
+              <p>Lorem ipsum pro tation euripidis liberavisse eu, duis brute probatus quo eu.
+                  Quot ubique iisque no eum, per soluta tibique contentiones ad.
+                  Has hinc repudiandae ea. Ea putent contentiones mel.
+                  Mea delenit mentitum at, at pri vocent accusata, nam te clita scripta accumsan.
+                  Lorem facete mel id. Nonummy quaestio usu ne, cu atqui eirmod scripta pri.
+                  Tamquam quaeque an cum.
+              </p>
+        </div>
+      </figure>
+      <figure id="Timglasdelfin" class="parallax-window skroll" data-parallax="scroll" data-image-src="delfin3.jpg" data-speed="0.05" iosFix="true" androidFix="true">
+          <div class="text">
+              <h1>Timglasdelfin</h1>
+              <p>Lorem ipsum pro tation euripidis liberavisse eu, duis brute probatus quo eu.
+                  Quot ubique iisque no eum, per soluta tibique contentiones ad.
+                  Has hinc repudiandae ea. Ea putent contentiones mel.
+                  Mea delenit mentitum at, at pri vocent accusata, nam te clita scripta accumsan.
+                  Lorem facete mel id. Nonummy quaestio usu ne, cu atqui eirmod scripta pri.
+                  Tamquam quaeque an cum.
+              </p>
+        </div>
+      </figure>
+      <figure id="Spackhuggare" class="parallax-window skroll" data-parallax="scroll" data-image-src="delfin4.jpg" data-speed="0.05" iosFix="true" androidFix="true">
+          <div class="text">
+              <h1>Späckhuggare</h1>
+              <p>Lorem ipsum pro tation euripidis liberavisse eu, duis brute probatus quo eu.
+                  Quot ubique iisque no eum, per soluta tibique contentiones ad.
+                  Has hinc repudiandae ea. Ea putent contentiones mel.
+                  Mea delenit mentitum at, at pri vocent accusata, nam te clita scripta accumsan.
+                  Lorem facete mel id. Nonummy quaestio usu ne, cu atqui eirmod scripta pri.
+                  Tamquam quaeque an cum.
+              </p>
+        </div>
+      </figure>
+    </div> <!--Här slutar delfin-->
+
+    <div id="Albatross">
+      <figure class="parallax-window skroll" data-parallax="scroll" data-image-src="albatross1.jpg" data-speed="0.05" iosFix="true" androidFix="true">
+          <div class="text">
+              <h1>Albatrosser</h1>
+              <p>Lorem ipsum pro tation euripidis liberavisse eu, duis brute probatus quo eu.
+                  Quot ubique iisque no eum, per soluta tibique contentiones ad.
+                  Has hinc repudiandae ea. Ea putent contentiones mel.
+                  Mea delenit mentitum at, at pri vocent accusata, nam te clita scripta accumsan.
+                  Lorem facete mel id. sNonummy quaestio usu ne, cu atqui eirmod scripta pri.
+                  Tamquam quaeque an cum.
+              </p>
+        </div>
+      </figure>
+      <figure id="Vandringsalbatross" class="parallax-window skroll" data-parallax="scroll" data-image-src="albatross2.jpg" data-speed="0.05" iosFix="true" androidFix="true">
+          <div class="text">
+              <h1>Vandringsalbatross</h1>
+              <p>Lorem ipsum pro tation euripidis liberavisse eu, duis brute probatus quo eu.
+                  Quot ubique iisque no eum, per soluta tibique contentiones ad.
+                  Has hinc repudiandae ea. Ea putent contentiones mel.
+                  Mea delenit mentitum at, at pri vocent accusata, nam te clita scripta accumsan.
+                  Lorem facete mel id. Nonummy quaestio usu ne, cu atqui eirmod scripta pri.
+                  Tamquam quaeque an cum.
+              </p>
+        </div>
+      </figure>
+      <figure id="Sotalalbatross" class="parallax-window skroll" data-parallax="scroll" data-image-src="albatross3.jpg" data-speed="0.05" iosFix="true" androidFix="true">
+          <div class="text">
+              <h1>Sotalalbatross</h1>
+              <p>Lorem ipsum pro tation euripidis liberavisse eu, duis brute probatus quo eu.
+                  Quot ubique iisque no eum, per soluta tibique contentiones ad.
+                  Has hinc repudiandae ea. Ea putent contentiones mel.
+                  Mea delenit mentitum at, at pri vocent accusata, nam te clita scripta accumsan.
+                  Lorem facete mel id. Nonummy quaestio usu ne, cu atqui eirmod scripta pri.
+                  Tamquam quaeque an cum.
+              </p>
+        </div>
+      </figure>
+    </div> <!--Här slutar albatross-->
+    <footer>
+      <p>Denis Begu 2018</p>
+    </footer>
+  </body>
+</html>
