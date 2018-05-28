@@ -1,19 +1,19 @@
 function hamMeny(x) {
     x.classList.toggle("change");
 }
-
+var i = true;
 function openMeny()
 {
-	var i = 0;
-	if (i == 0) 
+	
+	if (i == true) 
 	{
 		document.getElementById("navcontent").style.display = "block";
-		i = 1;
+		i = false;
 	}
 	else
 	{
 		document.getElementById("navcontent").style.display = "none";
-		i = 0;
+		i = true;
 	}
 	
 }
