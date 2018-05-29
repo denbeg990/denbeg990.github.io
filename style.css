@@ -36,8 +36,8 @@ nav ul li a
   line-height:50px;
   background: rgba(0,0,0,0.2);
   color:white;
-  font-family:Arial;
-  font-size:24px;
+  font-family:Helvetica;
+  font-size:20px;
   transition:background-color 300ms;
   float: left;
   text-align: center;
@@ -81,8 +81,8 @@ nav ul li a:hover
   line-height:50px;
   background: rgba(0,0,0,0.2);
   color:white;
-  font-family:Arial;
-  font-size:24px;
+  font-family:Helvetica;
+  font-size:20px;
   transition:background-color 300ms;  
   text-align: center;
   text-decoration: none;
@@ -133,7 +133,7 @@ button
   font-size: 20px;
   position: fixed;
   border-radius: 5px;
-  z-index: 100;
+  z-index: 10000000;
 }
 
 .bar1, .bar2, .bar3 {
@@ -146,21 +146,18 @@ button
 }
 
 .change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-    transform: rotate(-45deg) translate(-6px, 6px);
+    -webkit-transform: rotate(-45deg) translate(-5px, 5px);
+    transform: rotate(-45deg) translate(-5px, 5px);
 }
 
 .change .bar2 {opacity: 0;}
 
 .change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px);
-    transform: rotate(45deg) translate(-8px, -8px);
+    -webkit-transform: rotate(45deg) translate(-7px, -7px);
+    transform: rotate(45deg) translate(-7px, -7px);
 }
 
-figure.top
-{
-    top:60px;
-}
+
 
 figure
 {
@@ -179,27 +176,29 @@ figure .text
     z-index:10000;
     top:300px;
     left:10%;
-    background-color: #ffffff;
-    opacity: 0.6;
-    border-radius: 10%;
+    background-color: rgba(255,255,255,0.6);
+    border-radius: 7%;
+    z-index: 0;
 }
 
 
 
 figure .text h1
 {
-    color:rgba(1,1,1, 0.9);
-    font-family:Verdana;
+    color:rgba(1,1,1, 0.7);
+    font-family:Garamond;
     font-size:30px;
     margin-top: 15px;
-    text-align: Center;
+    margin-left: 5%;
+    letter-spacing: 0.02em;
+    
     /*text-shadow: -1px 0 rgba(0, 0, 0, 0.7), 0 1px rgba(0, 0, 0, 0.5), 1px 0 rgba(0, 0, 0, 0.5), 0 -1px rgba(0, 0, 0, 0.5);
 */
 }
 
 figure .text p{
-    color:rgba(1,1,1, 0.9);
-    font-family:Verdana;    
+    color:rgba(1,1,1, 0.85);
+    font-family:Helvetica;    
     font-size:17px;
     line-height:24px;
     margin: 5%;
@@ -227,6 +226,33 @@ footer p
   line-height: 50px;
 }
 
+@media screen and (min-width: 601px) and (max-width: 1400px)
+{
+  figure .text
+  {
+    width: 100%;
+    top:470px;
+    height: 200px;
+    left: 0;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 0;
+  }
+  figure .text h1
+  {
+    margin-top: 20px;
+    margin-left: 5%;
+  }
+  figure .text p
+  {
+    margin-top: 5px;
+    width: 75%;
+  }
+}
+
+.parallax-window {
+    min-height: 670px;
+    background: transparent;
+}
 @media screen and (max-width: 600px)
 {
 
@@ -239,18 +265,22 @@ footer p
   #navcontent
   {
     width: 50%;
-    height: 400px;
+    height: 450px;
     display: none;
-    opacity: 0.8;
     overflow: scroll; 
+    background-color: rgba(0,0,0,0.9);
   }
 
+  #navcontent #pingvinnav
+  {
+   margin-top: -60px;
+  }
   #navcontent .navdrop
   {
     display: block;
     margin: 0;
     width: 100%;
-    background-color: rgb(0,0,0);
+    background-color: none;
   }
   #navcontent .navdrop ul li a
   {
@@ -258,6 +288,7 @@ footer p
     height: 20px;
     background: none;
     margin-bottom: 10px;
+    color: white;
 
   }
 
@@ -268,9 +299,8 @@ footer p
 
   figure
   {
-    margin: 400px 0 0 0;
-
-
+    margin: 320px 0 0 0;
+    
   }
   #ett
   {
@@ -283,25 +313,18 @@ footer p
     top:400px;
     left: 0;
     background: rgba(255, 255, 255, 0.1);
-    border-radius: 10%;
   }
-
-
 
   figure .text h1
   {
-    color:black;
-    font-family:Verdana;
     font-size:30px;
-    margin-top:12px;
-    text-align: center;
+    margin-top:20px;
+    margin-left: 5%;
     text-shadow: none;
   }
 
   figure .text p
-  {
-    color:black;
-    font-family:Verdana;    
+  {     
     font-size:17px;
     line-height:24px;
     text-shadow: none;
