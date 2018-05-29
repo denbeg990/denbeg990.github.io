@@ -36,7 +36,7 @@ nav ul li a
   line-height:50px;
   background: rgba(0,0,0,0.2);
   color:white;
-  font-family:Helvetica;
+  font-family: 'Open Sans', sans-serif;
   font-size:20px;
   transition:background-color 300ms;
   float: left;
@@ -81,7 +81,7 @@ nav ul li a:hover
   line-height:50px;
   background: rgba(0,0,0,0.2);
   color:white;
-  font-family:Helvetica;
+  font-family: 'Open Sans', sans-serif;
   font-size:20px;
   transition:background-color 300ms;  
   text-align: center;
@@ -179,6 +179,7 @@ figure .text
     background-color: rgba(255,255,255,0.6);
     border-radius: 7%;
     z-index: 0;
+    padding-top: 10px;
 }
 
 
@@ -186,25 +187,20 @@ figure .text
 figure .text h1
 {
     color:rgba(1,1,1, 0.7);
-    font-family:Garamond;
+    font-family:'Lora', serif;
     font-size:30px;
-    margin-top: 15px;
     margin-left: 5%;
     letter-spacing: 0.02em;
-    
-    /*text-shadow: -1px 0 rgba(0, 0, 0, 0.7), 0 1px rgba(0, 0, 0, 0.5), 1px 0 rgba(0, 0, 0, 0.5), 0 -1px rgba(0, 0, 0, 0.5);
-*/
 }
 
-figure .text p{
+figure .text p
+{
+    width: 360px;
     color:rgba(1,1,1, 0.85);
-    font-family:Helvetica;    
+    font-family: 'Open Sans', sans-serif;    
     font-size:17px;
     line-height:24px;
-    margin: 5%;
-    /*text-shadow: -1px 0 rgba(0, 0, 0, 0.5), 0 1px rgba(0, 0, 0, 0.5), 1px 0 rgba(0, 0, 0, 0.5), 0 -1px rgba(0, 0, 0, 0.5);
-*/
-
+    margin-left: 5%;
 }
 
 .parallax-window {
@@ -226,7 +222,7 @@ footer p
   line-height: 50px;
 }
 
-@media screen and (min-width: 601px) and (max-width: 1400px)
+@media screen and (min-width: 900px) and (max-width: 1400px)
 {
   figure .text
   {
@@ -247,13 +243,14 @@ footer p
     margin-top: 5px;
     width: 75%;
   }
-}
+
 
 .parallax-window {
     min-height: 670px;
     background: transparent;
 }
-@media screen and (max-width: 600px)
+}
+@media screen and (max-width: 900px)
 {
 
   nav ul li a
