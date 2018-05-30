@@ -3,24 +3,24 @@
   <head>
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
     <title>Antarktis djur</title>
-    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet"><!--Typsnitt Lora-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"><!--Typsnitt Open Sans-->
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-    <script src="parallax.js"></script>
-    <link rel="stylesheet" href="style.css" type="text/css">
-    <script src="slutuppgift.js"></script>
-    <script src="meny.js"></script>
+    <script src="parallax.js"></script><!--parallax-script-->
+    <script src="slutuppgift.js"></script><!--skrollanimation efter klck på länkar-->
+    <script src="meny.js"></script><!--hamburgmeny-->
     <script>
-    if (screen && screen.width > 600) 
+    if (screen && screen.width > 900) 
     {
         document.write('<script type="text/javascript" src="links.js"><\/script>');
     }
-</script>
+    </script><!--Script för dropdown-meny. Läses endast in om skärmen är bredre än 900px-->
+    <link rel="stylesheet" href="style.css" type="text/css">
   </head>
   <body>
-    <nav>
+    <nav><!--navigeringsmenyn börjar-->
       <ul>
-        <li><a href="#Antarktis" onmouseover="linkHover('antarktisnav')" onmouseout="linkOff('antarktisnav')">Antarktis</a></li>
+        <li><a href="#Antarktis" onmouseover="linkHover('antarktisnav')" onmouseout="linkOff('antarktisnav')">Antarktis</a></li><!--funktionen "linkHover" ändrar display från none till block på den div som ligger under länken som musen ligger över. div:ens id skickas med. "linkOff" ställer tillbaka display till none när man slutat hovra. "#Antarktis" hoppar till diven med det id:t.-->
 
         <li><a href="#Pingvin" onmouseover="linkHover('pingvinnav')" onmouseout="linkOff('pingvinnav')">Pingviner</a></li>
 
@@ -36,10 +36,10 @@
         <li><a href="#Albatross" onmouseover="linkHover('albatrossnav')" onmouseout="linkOff('albatrossnav')">Albatrosser</a>
         </li>
       </ul>
-    </nav>
+    </nav><!--Navigeringsmenyn slutar-->
 
-    <div id="navcontent">
-      <div id="antarktisnav" class="navdrop" onmouseover="linkHover('antarktisnav')" onmouseout="linkOff('antarktisnav')">
+    <div id="navcontent"><!--dropdown-menyn börjar-->
+      <div id="antarktisnav" class="navdrop" onmouseover="linkHover('antarktisnav')" onmouseout="linkOff('antarktisnav')"><!--"linkHover" och "linkOff" läggs även i dessa taggar. Annars sätts display till none såfort man lämnat förälderlänken med musen.-->
         <ul>
           <li><a href="#Historia">Historia</a></li>
         </ul>
@@ -78,14 +78,14 @@
           <li><a href="#Sotalalbatross">Sotalalbatross</a></li>
         </ul>
       </div>
-    </div>
-    <button onclick="hamMeny(this); openMeny();">
+    </div><!--dropdownmenyn slutar-->
+    <button onclick="hamMeny(this); openMeny();"><!--menyknapp på små skärmar. tre linjer blir knappens ikon. Animation till ett kryss vid klick genom "hamMeny" -->
         <div class="bar1"></div>
         <div class="bar2"></div>
         <div class="bar3"></div>
     </button>
     
-    <div id="Antarktis">
+    <div id="Antarktis"><!--Antarktis börjar-->
       <figure id="ett" class="parallax-window skroll" data-parallax="scroll" data-image-src="Antarktis1.jpg" data-speed="0.05" iosFix="true" androidFix="true">
           <div class="text">
               <h1>Antarktis</h1>
@@ -102,7 +102,7 @@
       </figure>
     </div> <!--Här slutar Antarktis-->
 
-    <div id="Pingvin">
+    <div id="Pingvin"><!--Pingvin börjar-->
       <figure class="parallax-window skroll" data-parallax="scroll" data-image-src="Pingviner1.jpg" data-speed="0.05" iosFix="true" androidFix="true">
           <div class="text">
               <h1>Pingviner</h1>
@@ -133,11 +133,11 @@
       </figure>
     </div> <!--Här slutar Pingviner-->
 
-    <div id="Sal">
+    <div id="Sal"><!--Sal börjar-->
       <figure class="parallax-window skroll" data-parallax="scroll" data-image-src="sal1.jpg" data-speed="0.05" iosFix="true" androidFix="true">
           <div class="text">
               <h1>Sälar</h1>
-              <p>Sälar en grupp däggdjur som delas in i tre familjer –  öronsälar, öronlösa sälar och valrossar. Det finns 33 arter som alla trivs i vatten. På land har sälarna det svårt att ta sig fram. Många sälar lever i arktiska eller antarktiska områden. Där finns mycket föda i havet och obebodda öar. De tar sig fram med sina fenor eller så ålar de. Nedanför kommer sammafattningar om Krabbätarsäl, Antarktisk pälssäl och Sydlig sjöelefant. 
+              <p>Sälar är en grupp däggdjur som delas in i tre familjer –  öronsälar, öronlösa sälar och valrossar. Det finns 33 arter som alla trivs i vatten. På land har sälarna det svårt att ta sig fram. Många sälar lever i arktiska eller antarktiska områden. Där finns mycket föda i havet och obebodda öar. De tar sig fram med sina fenor eller så ålar de. Nedanför kommer sammafattningar om Krabbätarsäl, Antarktisk pälssäl och Sydlig sjöelefant. 
               </p>
         </div>
       </figure>
@@ -153,7 +153,7 @@
               <h1>Antarktisk pälssäl</h1>
               <p>Antarktisk pälssäl (Arctocephalus gazella) är en sälart i familjen öronsälar, och en av de åtta arter som utgör släktet Arctocephalus. Med en vikt av 133 –204 kg är vuxna hanar fyra till fem gånger tyngre än honor. Hanar är även 1,5 gånger längre med en genomsnittligt längd av 180 cm och en maximallängd av 200 cm. Honor blir 120–140 cm långa och väger 22–51 kg. Den antarktiska pälssälen lever på öarna runt Antarktis.
               </p>
-        </div>
+        </div><!--Sal slutar-->
       </figure>
       <figure id="Elefant" class="parallax-window skroll" data-parallax="scroll" data-image-src="sal4.jpg" data-speed="0.05" iosFix="true" androidFix="true">
           <div class="text">
@@ -162,9 +162,9 @@
               </p>
         </div>
       </figure>
-    </div> <!--Här slutar Säl-->
+    </div> <!--Här slutar Sal-->
 
-    <div id="Val">
+    <div id="Val"><!--Val börjar-->
       <figure class="parallax-window skroll" data-parallax="scroll" data-image-src="val1.jpg" data-speed="0.05" iosFix="true" androidFix="true">
           <div class="text">
               <h1>Valar</h1>
@@ -195,7 +195,7 @@
       </figure>
     </div> <!--Här slutar val-->
 
-    <div id="Delfin">
+    <div id="Delfin"><!--Delfin börjar-->
       <figure class="parallax-window skroll" data-parallax="scroll" data-image-src="delfin1.jpg" data-speed="0.05" iosFix="true" androidFix="true">
           <div class="text">
               <h1>Delfiner</h1>
@@ -226,7 +226,7 @@
       </figure>
     </div> <!--Här slutar delfin-->
 
-    <div id="Albatross">
+    <div id="Albatross"><!--Albatross börjar-->
       <figure class="parallax-window skroll" data-parallax="scroll" data-image-src="albatross1.jpg" data-speed="0.05" iosFix="true" androidFix="true">
           <div class="text">
               <h1>Albatrosser</h1>
@@ -249,8 +249,8 @@
         </div>
       </figure>
     </div> <!--Här slutar albatross-->
-    <footer>
+    <footer><!--footer börjar-->
       <p>Denis Begu 2018</p>
-    </footer>
+    </footer><!--footer slutar-->
   </body>
 </html>
