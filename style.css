@@ -179,7 +179,7 @@ figure .text
     background-color: rgba(255,255,255,0.6);
     border-radius: 7%;
     z-index: 0;
-    padding-top: 10px;
+    padding-top: 5px;
 }
 
 
@@ -201,6 +201,11 @@ figure .text p
     font-size:17px;
     line-height:24px;
     margin-left: 5%;
+}
+
+figure .text .italic
+{
+  font-style: italic;
 }
 
 .parallax-window {
@@ -228,7 +233,7 @@ footer p
   figure .text
   {
     width: 100%;
-    top:470px;
+    top:475px;
     height: 190px;
     left: 0;
     background: rgba(255, 255, 255, 0.7);
